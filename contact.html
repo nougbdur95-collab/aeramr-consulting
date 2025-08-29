@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - AERAMR CONSEILS</title>
+    <meta name="description" content="Contactez-nous pour toute demande de renseignement ou de proposition.">
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">AERAMR CONSEILS</a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="projets.html">Projets</a></li>
+                    <li><a href="rapports.html">Rapports</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1 class="section-title">Contactez-nous</h1>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; align-items: start;">
+            <div>
+                <h3>Envoyez-nous un message</h3>
+                <form id="contact-form" action="https://formspree.io/f/VOTRE_CODE_UNIQUE" method="POST">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adresse Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Téléphone (Optionnel)</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Votre message</label>
+                        <textarea id="message" name="message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Envoyer</button>
+                </form>
+            </div>
+            <div>
+                <h3>Nos Coordonnées</h3>
+                <p><strong>Email:</strong> secretariataeramr@gmail.com</p>
+                <p><strong>Téléphone:</strong> +229 01 21 123 456</p>
+                <p><strong>Adresse:</strong> Cité ZOPAH, villas X21 L5O, Abomey-Calavi, Bénin</p>
+                
+                <h3 style="margin-top: 2rem;">Notre Localisation</h3>
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.29398395551!2d2.355322314770539!3d6.484993995309745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1024a9b8a4a5b6d7%3A0x8a8d9b3f2b4b4e4d!2sAbomey-Calavi!5e0!3m2!1sfr!2sbj!4v1672522450358!5m2!1sfr!2sbj" 
+                    width="100%" 
+                    height="300" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div><h4>AERAMR CONSEILS</h4><p>Votre partenaire de confiance...</p></div>
+            <div><h4>Navigation</h4><ul><li><a href="index.html">Accueil</a></li><li><a href="services.html">Services</a></li></ul></div>
+            <div><h4>Contactez-nous</h4><p>Email: secretariataeramr@gmail.com</p></div>
+            <div><h4>Suivez-nous</h4><div class="social-links"><a href="#">L</a> <a href="#">T</a></div></div>
+        </div>
+        <div class="footer-bottom"><p>&copy; 2025 AERAMR CONSEILS. Tous droits réservés.</p></div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
