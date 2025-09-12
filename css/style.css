@@ -303,45 +303,7 @@ img {
     color: var(--dark-color);
 }
 
-/* Service Cards with Images */
-.service-card {
-    position: relative;
-    color: white;
-    background-size: cover;
-    background-position: center;
-    min-height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 0;
-}
 
-.service-card .card-body {
-    background: linear-gradient(to top, rgba(0,0,0,0.9), rgba(0,0,0,0.1));
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 1.5rem;
-}
-
-.service-card h3 {
-    color: var(--white-color);
-}
-
-.service-env {
-    background-image: url("../assets/img/service-environnement.jpg");
-}
-.service-dev {
-    background-image: url("../assets/img/service-developpement-local.jpg");
-}
-.service-civil {
-    background-image: url("../assets/img/service-genie-civil.jpg");
-}
-.service-audit {
-    background-image: url("../assets/img/service-audit.jpg");
-}
 
 
 /* --- Reports List --- */
@@ -439,15 +401,25 @@ img {
 
 .partner-logo img {
     max-width: 140px;
-    filter: grayscale(100%);
-    opacity: 0.7;
     transition: all 0.3s ease-in-out;
 }
 
 .partner-logo img:hover {
-    filter: grayscale(0%);
-    opacity: 1;
     transform: scale(1.1);
+}
+
+.partner-placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed var(--grey-color);
+    border-radius: 8px;
+    height: 100%;
+    min-height: 80px;
+    text-align: center;
+    padding: 0.5rem;
+    color: var(--grey-color);
+    font-weight: bold;
 }
 
 /* --- Back to Top Button --- */
