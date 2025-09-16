@@ -63,7 +63,14 @@
                 <p><strong>Adresse:</strong> Cité ZOPAH, villas X21 L5O, Abomey-Calavi, Bénin</p>
                 
                 <h3 style="margin-top: 2rem;">Notre Localisation</h3>
-                <div id="map" style="height: 300px; width: 100%;"></div>
+                <iframe
+                    width="100%"
+                    height="450"
+                    style="border:0; border-radius: 8px;"
+                    loading="lazy"
+                    allowfullscreen
+                    src="https://maps.google.com/maps?q=AERAMR%20CONSEILS%20Cit%C3%A9%20ZOPAH%2C%20villas%20X21%20L5O%2C%20Abomey-Calavi%2C%20Benin&t=&z=15&ie=UTF8&iwloc=&output=embed">
+                </iframe>
             </div>
         </div>
     </main>
@@ -110,24 +117,6 @@
     </footer>
 
     <script src="js/script.js"></script>
-    <script>
-        function initMap() {
-            const mapLocation = { lat: 6.484993, lng: 2.355322 };
-            const map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 15,
-                center: mapLocation,
-            });
-            const marker = new google.maps.Marker({
-                position: mapLocation,
-                map: map,
-                icon: {
-                    url: 'assets/img/logo aeramr.png',
-                    scaledSize: new google.maps.Size(50, 50)
-                }
-            });
-        }
-    </script>
-    <script async src="https://maps.googleapis.com/maps/api/js?key=VOTRE_CLE_API_ICI&callback=initMap"></script>
     <a href="#" class="back-to-top"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg></a>
 </body>
 </html>

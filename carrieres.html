@@ -57,73 +57,35 @@
         <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem auto;">AERAMR CONSEILS offre des opportunités de stage et d’emploi dans quatre départements pluridisciplinaires pour accompagner le développement local et la gestion environnementale. Nous valorisons les talents, l’éthique professionnelle et la coopération.</p>
 
         <div class="quick-nav">
-            <a href="#stage" class="btn">Stages</a>
-            <a href="#emploi" class="btn">Emplois</a>
+            <a href="#candidature" class="btn">Candidatures Spontanées</a>
             <a href="#partenariat" class="btn">Partenariats</a>
             <a href="#groupement" class="btn">Groupements</a>
         </div>
 
-        <!-- Section Stage -->
-        <section id="stage" class="career-section">
-            <h2>Demandes de Stage</h2>
-            <p>Nous proposons des stages pour soutenir nos missions dans les quatre départements. Sélectionnez le département souhaité pour accéder au formulaire de candidature.</p>
-            <form action="https://formspree.io/f/VOTRE_CODE_STAGE" method="POST" enctype="multipart/form-data">
-                <div class="form-grid">
-                    <div class="form-group"><label for="stage-name">Prénom et Nom*</label><input type="text" id="stage-name" name="name" required></div>
-                    <div class="form-group"><label for="stage-email">Email*</label><input type="email" id="stage-email" name="email" required></div>
-                    <div class="form-group"><label for="stage-phone">Téléphone</label><input type="tel" id="stage-phone" name="phone"></div>
-                    <div class="form-group">
-                        <label for="stage-departement">Département*</label>
-                        <select id="stage-departement" name="departement" required>
-                            <option value="">Choisissez un département...</option>
-                            <option value="Environnement">Environnement, Ressources naturelles et Aménagement forestier</option>
-                            <option value="Developpement Local">Développement Local, Capitalisation des Projets et Appui-Conseil</option>
-                            <option value="Genie Civil">Études de Faisabilité et Génie Civil</option>
-                            <option value="Ingenierie Sociale">Ingénierie Sociale – Management et Audit technique et organisationnel</option>
-                        </select>
-                    </div>
-                    <div class="form-group"><label for="stage-disponibilite">Disponibilité (dates possibles)</label><input type="text" id="stage-disponibilite" name="disponibilite"></div>
-                    <div class="form-group"><label for="stage-duree">Durée du stage souhaitée</label><input type="text" id="stage-duree" name="duree"></div>
-                </div>
-                <div class="form-group"><label for="stage-etudes">Niveau d’études / diplôme visé</label><input type="text" id="stage-etudes" name="etudes"></div>
-                <div class="form-group"><label for="stage-competences">Compétences et expériences pertinentes</label><textarea id="stage-competences" name="competences" rows="4"></textarea></div>
-                <div class="form-grid">
-                    <div class="form-group"><label for="stage-cv">CV (PDF, DOC, DOCX)*</label><input type="file" id="stage-cv" name="cv" accept=".pdf,.doc,.docx" required></div>
-                    <div class="form-group"><label for="stage-lm">Lettre de motivation (PDF, DOC, DOCX)</label><input type="file" id="stage-lm" name="lettre_motivation" accept=".pdf,.doc,.docx"></div>
-                </div>
-                <div class="form-group"><label for="stage-message">Message/Notes</label><textarea id="stage-message" name="message" rows="4"></textarea></div>
-                <button type="submit" class="btn btn-primary">Postuler – Stage</button>
-            </form>
-        </section>
+        <!-- Section Candidature -->
+        <section id="candidature" class="career-section">
+            <h2>Candidatures Spontanées (Stage ou Emploi)</h2>
+            <p>Pour assurer la transparence et la bonne gestion de votre dossier, veuillez adresser votre candidature (CV et lettre de motivation) à l'adresse e-mail correspondant au département qui vous intéresse :</p>
+            
+            <div class="service-department">
+                <h2>Departement 1 : ENVIRONNEMENT RESSOURCES NATURELLES ET AMENAGEMENT FORESTIER</h2>
+                <p><strong>Email :</strong> <a href="mailto:carrieres.environnement@aeramrconseils.com">carrieres.environnement@aeramrconseils.com</a></p>
+            </div>
 
-        <!-- Section Emploi -->
-        <section id="emploi" class="career-section">
-            <h2>Demandes d’Emploi</h2>
-            <p>Nous recrutons régulièrement dans nos quatre départements. Choisissez votre domaine pour déposer votre candidature.</p>
-            <form action="https://formspree.io/f/VOTRE_CODE_EMPLOI" method="POST" enctype="multipart/form-data">
-                <div class="form-grid">
-                    <div class="form-group"><label for="emploi-name">Prénom et Nom*</label><input type="text" id="emploi-name" name="name" required></div>
-                    <div class="form-group"><label for="emploi-email">Email*</label><input type="email" id="emploi-email" name="email" required></div>
-                    <div class="form-group"><label for="emploi-phone">Téléphone</label><input type="tel" id="emploi-phone" name="phone"></div>
-                    <div class="form-group">
-                        <label for="emploi-departement">Département*</label>
-                        <select id="emploi-departement" name="departement" required>
-                            <option value="">Choisissez un département...</option>
-                            <option value="Environnement">Environnement, Ressources naturelles et Aménagement forestier</option>
-                            <option value="Developpement Local">Développement Local, Capitalisation des Projets et Appui-Conseil</option>
-                            <option value="Genie Civil">Études de Faisabilité et Génie Civil</option>
-                            <option value="Ingenierie Sociale">Ingénierie Sociale – Management et Audit technique et organisationnel</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-group"><label for="emploi-experience">Expériences professionnelles</label><textarea id="emploi-experience" name="experience" rows="4"></textarea></div>
-                <div class="form-grid">
-                    <div class="form-group"><label for="emploi-cv">CV (PDF, DOC, DOCX)*</label><input type="file" id="emploi-cv" name="cv" accept=".pdf,.doc,.docx" required></div>
-                    <div class="form-group"><label for="emploi-lm">Lettre de motivation (PDF, DOC, DOCX)</label><input type="file" id="emploi-lm" name="lettre_motivation" accept=".pdf,.doc,.docx"></div>
-                </div>
-                <div class="form-group"><label for="emploi-message">Message</label><textarea id="emploi-message" name="message" rows="4"></textarea></div>
-                <button type="submit" class="btn btn-primary">Postuler – Emploi</button>
-            </form>
+            <div class="service-department">
+                <h2>Departement 2 : DEVELOPPEMENT LOCAL, CAPITALISATION DES PROJETS ET APPUI-CONSEIL</h2>
+                <p><strong>Email :</strong> <a href="mailto:carrieres.developpement@aeramrconseils.com">carrieres.developpement@aeramrconseils.com</a></p>
+            </div>
+
+            <div class="service-department">
+                <h2>Departement 3 : ETUDES DE FAISABILITE ET GENIE CIVIL</h2>
+                <p><strong>Email :</strong> <a href="mailto:carrieres.geniecivil@aeramrconseils.com">carrieres.geniecivil@aeramrconseils.com</a></p>
+            </div>
+
+            <div class="service-department">
+                <h2>Département 4 : INGENIERIE SOCIALE-MANAGEMENT ET AUDIT TECHNIQUE ET ORGANISATIONNEL</h2>
+                <p><strong>Email :</strong> <a href="mailto:carrieres.ingenierie@aeramrconseils.com">carrieres.ingenierie@aeramrconseils.com</a></p>
+            </div>
         </section>
 
         <!-- Section Partenariat -->
